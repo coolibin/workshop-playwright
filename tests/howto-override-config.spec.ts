@@ -1,8 +1,6 @@
 // @ts-check
 import {test} from '@playwright/test';
 
-//test.use({baseURL: 'https://some-other.com/'});
-
 test('test-1', async ({}, testInfo) => {
     const bu = testInfo.project.use.baseURL
     console.log('test-1 ' + bu)
