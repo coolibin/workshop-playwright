@@ -45,6 +45,19 @@ export default defineConfig({
     /* Configure projects for major browsers */
     projects: [
         {
+            name: 'auth-setup',
+            testMatch: /auth\.setup\.ts/,
+        },
+        {
+            name: 'auth-test',
+            use: {
+                ...devices['chromium'],
+                storageState: 'tmp/user.json', // path from root
+            },
+            testMatch: /auth\.test\.spec\.ts/,
+            dependencies: ["auth-setup"],
+        },
+        {
             name: "global setup",
             testMatch: /global\.setup\.ts/,
         },
