@@ -1,3 +1,4 @@
+export {}
 
 
 interface IProduct {
@@ -58,5 +59,7 @@ class Creator2 {
     }
 }
 
-const product = new Creator2().createProduct('A')
+const product = new Creator().createProduct('A')
+const product2 = new Creator2().createProduct('A')
 console.log(product)
+console.log(product2)

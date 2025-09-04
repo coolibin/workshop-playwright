@@ -10,7 +10,6 @@ pnpm-debug.log*
 package-lock.json.* # partial/backup files created by some editors
 
 # Playwright
-node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
@@ -47,5 +46,5 @@ Thumbs.db
 .parcel-cache/
 .cache/
 
-tmp/*
-
+tmp/
+dist/
